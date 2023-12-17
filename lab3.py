@@ -40,12 +40,12 @@ from statistics import median
 
 # sqlite import
 
-with sqlite3.connect("tables/nyc_table.db") as conn:
-    cursor = conn.cursor()
-    tiny = "nyc_yellow_tiny.csv"
-    df = pd.read_csv(tiny)
-    df.to_sql('trips', conn, if_exists='replace', index=False)
-    conn.commit()
+# with sqlite3.connect("tables/nyc_table.db") as conn:
+#     cursor = conn.cursor()
+#     tiny = "nyc_yellow_tiny.csv"
+#     df = pd.read_csv(tiny)
+#     df.to_sql('trips', conn, if_exists='replace', index=False)
+#     conn.commit()
 
 
 # sqlite queries
